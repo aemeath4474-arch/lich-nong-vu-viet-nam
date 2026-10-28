@@ -1,0 +1,6 @@
+{
+  "name": "Lịch Nông Vụ & Tri Thức Canh Tác Việt Nam",
+  "description": "Ứng dụng tra cứu lịch nông vụ, mùa vụ gieo trồng, thời tiết phù hợp và tri thức canh tác truyền thống Việt Nam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

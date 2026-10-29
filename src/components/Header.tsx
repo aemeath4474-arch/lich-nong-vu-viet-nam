@@ -38,7 +38,7 @@ export const Header: React.FC<HeaderProps> = ({ activeScreen, setActiveScreen })
   return (
     <header className="sticky top-0 z-40 bg-emerald-900 text-white shadow-md border-b border-emerald-800">
       {/* Top Banner Accent */}
-      <div className="bg-amber-600 text-amber-50 text-xs py-1 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
+      <div className="bg-amber-600 text-amber-50 text-xs py-1 px-4 text-center font-medium flex items-center justify-center gap-2">
         <Wheat className="w-3.5 h-3.5 text-amber-200" />
         <span>Di sản Văn hóa Nông nghiệp Lúa nước Việt Nam & Tri thức Canh tác Cổ truyền</span>
       </div>
@@ -55,7 +55,7 @@ export const Header: React.FC<HeaderProps> = ({ activeScreen, setActiveScreen })
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-bold text-lg sm:text-xl tracking-tight text-white font-serif">
+                <span className="font-bold text-lg sm:text-xl text-white font-serif">
                   LỊCH NÔNG VỤ VIỆT NAM
                 </span>
               </div>

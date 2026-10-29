@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ActiveScreen, NongVuDatabase, NongVuRecord } from './types.ts';
+import { ActiveScreen, NongVuDatabase, NongVuRecord, DongGopTuLieu } from './types.ts';
 import { defaultNongVuData } from './data/defaultData.ts';
 import { Header } from './components/Header.tsx';
 import { HomeScreen } from './components/HomeScreen.tsx';
@@ -60,6 +60,13 @@ export default function App() {
     }));
   };
 
+  const handleAddContribution = (newContrib: DongGopTuLieu) => {
+    setData((prev) => ({
+      ...prev,
+      danh_sach_dong_gop: [newContrib, ...(prev.danh_sach_dong_gop || [])],
+    }));
+  };
+
   return (
     <div className="min-h-screen bg-stone-50 text-stone-900 font-sans flex flex-col selection:bg-amber-300 selection:text-emerald-950 pb-16 lg:pb-0">
       
@@ -107,7 +114,10 @@ export default function App() {
         )}
 
         {activeScreen === 'about' && (
-          <AboutScreen />
+          <AboutScreen 
+            contributors={data.danh_sach_dong_gop}
+            onAddContribution={handleAddContribution}
+          />
         )}
       </main>
 

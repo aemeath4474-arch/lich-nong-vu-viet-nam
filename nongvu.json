@@ -10,7 +10,11 @@
     "dieu_kien_canh_tac": "",
     "phuong_phap_canh_tac_truyen_thong": "",
     "kinh_nghiem_dan_gian": "",
-    "nguon_tu_lieu": ""
+    "nguon_tu_lieu": "",
+    "tac_gia_don_vi": "",
+    "nam_xuat_ban": "",
+    "duong_dan_tham_khao": "",
+    "loai_thong_tin": ""
   },
   "danh_sach_nong_vu": [
     {
@@ -26,7 +30,11 @@
       "dieu_kien_canh_tac": "Giai đoạn đầu chịu rét đậm rét hại sương muối, cần che phủ nilong hoặc tưới nước ngập chân mạ để giữ ấm; vụ xuân có mưa phùn ẩm ướt; giai đoạn trỗ bông cần ánh sáng dồi dào và nhiệt độ ấm trên 20°C.",
       "phuong_phap_canh_tac_truyen_thong": "Làm đất ải (phơi ải đất ruộng sau vụ đông để diệt mầm bệnh và giải phóng dinh dưỡng khó tiêu), ngâm ủ thóc giống nước ấm '3 sôi 2 lạnh', giữ nước ấm chân mạ khi có gió mùa đông bắc, sử dụng bùn ao và phân chuồng ủ hoai mục lót đáy.",
       "kinh_nghiem_dan_gian": "'Lúa chiêm lấp ló đầu bờ, hễ nghe tiếng sấm phất cờ mà lên' (tiếng sấm đầu mùa mang theo đạm tự nhiên từ nước mưa); 'Bao giờ sương muối trắng ngần, gieo mạ phải giữ đôi phần nước chân'.",
-      "nguon_tu_lieu": "Vân Đài Loại Ngữ (Lê Quý Đôn - 1773); Cục Trồng trọt - Bộ Nông nghiệp và PTNT; Kinh nghiệm nông nghiệp truyền thống Đồng bằng Bắc Bộ."
+      "nguon_tu_lieu": "Vân Đài Loại Ngữ (Thiên Nông sự); Khung thời vụ Cục Trồng trọt",
+      "tac_gia_don_vi": "Lê Quý Đôn; Cục Trồng trọt - Bộ Nông nghiệp và PTNT",
+      "nam_xuat_ban": "1773; 2023",
+      "duong_dan_tham_khao": "https://www.cuctrongtrot.gov.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "lua-mua-bac-bo",
@@ -41,7 +49,11 @@
       "dieu_kien_canh_tac": "Nhiệt độ cao, ẩm độ lớn, mưa nhiều, thường đối mặt với giông bão ngập úng và sâu bệnh phát triển mạnh.",
       "phuong_phap_canh_tac_truyen_thong": "Làm đất ngấu (cày dầm bùn nhuyễn ngâm rơm rạ mục nhanh), đắp bờ giữ phù sa mùa lũ, thau chua rửa mặn vùng ven biển bãi triều, gặt chạy lũ trước tháng 9 âm lịch.",
       "kinh_nghiem_dan_gian": "'Cấy lúa mùa tháng Sáu, giục nhau đi làm cỏ'; 'Gió heo may, chuồn chuồn bay thì bão'; 'Được mùa lúa úa mùa cau, được mùa cau đau mùa lúa'.",
-      "nguon_tu_lieu": "Giáo trình Cây Lương thực - Học viện Nông nghiệp Việt Nam; Nông học truyền thống Việt Nam."
+      "nguon_tu_lieu": "Giáo trình Cây Lương thực - NXB Nông nghiệp",
+      "tac_gia_don_vi": "Học viện Nông nghiệp Việt Nam (VNUA)",
+      "nam_xuat_ban": "2020",
+      "duong_dan_tham_khao": "https://vnua.edu.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "lua-he-thu-dbscl",
@@ -56,13 +68,36 @@
       "dieu_kien_canh_tac": "Vùng châu thổ phù sa sông Tiền, sông Hậu; chịu tác động của lũ tự nhiên mùa nước nổi và xâm nhập mặn vùng cửa biển.",
       "phuong_phap_canh_tac_truyen_thong": "Hứng nước phù sa bồi ruộng ('đồng ngập lũ - đất màu mỡ'), cấy lúa nổi (lúa mùa nổi truyền thống ở vùng lũ sâu An Giang, Đồng Tháp), xả phèn theo triều cường rạch tự nhiên.",
       "kinh_nghiem_dan_gian": "'Nước rong con nước nhảy bờ, đem mạ xuống ruộng kịp giờ trổ hoa'; 'Lũ về mang cá cùng phù sa, vụ sau lúa tốt ngập bờ bao'.",
-      "nguon_tu_lieu": "Viện Lúa Đồng bằng Sông Cửu Long (CLRRI); Lịch sử khẩn hoang Nam Bộ - Sơn Nam."
+      "nguon_tu_lieu": "Kỹ thuật Canh tác Lúa Truyền thống & Thích ứng Biến đổi Khí hậu",
+      "tac_gia_don_vi": "Viện Lúa Đồng bằng Sông Cửu Long (CLRRI)",
+      "nam_xuat_ban": "2021",
+      "duong_dan_tham_khao": "http://clrri.org",
+      "loai_thong_tin": "truyen_thong"
+    },
+    {
+      "id": "lua-st25-hien-dai",
+      "ten_cay_trong": "Lúa thơm ST25 (Ứng dụng kỹ thuật canh tác cải tiến)",
+      "ten_goi_khac": "Gạo ngon nhất thế giới ST25, Lúa tôm Sóc Trăng",
+      "nhom_cay": "Cây lương thực",
+      "khu_vuc_ap_dung": "Vùng luân canh lúa - tôm Sóc Trăng, Bạc Liêu, Cà Mau (ĐBSCL)",
+      "mua_vu": "Vụ Thu Đông (tháng 9 - 12 DL)",
+      "thoi_gian_gieo_trong": "Gieo sạ từ cuối tháng 8 đến giữa tháng 9 dương lịch sau khi rửa mặn đầm tôm.",
+      "thoi_gian_cham_soc": "Sử dụng chế phẩm sinh học vi sinh xử lý đáy ao, quản lý sâu bệnh bằng kỹ thuật rầy nâu tự nhiên không phun thuốc độc hại, đo độ mặn định kỳ dưới 2‰.",
+      "thoi_gian_thu_hoach": "Sau 105 - 110 ngày, thu hoạch cuối tháng 11 hoặc tháng 12 dương lịch.",
+      "dieu_kien_canh_tac": "Vùng ven biển có một mùa nước ngọt và một mùa nước lợ mặn; độ phì đáy đầm tôm tự nhiên giàu dinh dưỡng.",
+      "phuong_phap_canh_tac_truyen_thong": "Mô hình cộng sinh sinh thái Lúa - Tôm hiện đại hóa: lúa làm sạch môi trường đầm nuôi tôm và hấp thụ chất thải hữu cơ từ vụ nuôi tôm trước.",
+      "kinh_nghiem_dan_gian": "Hạt gạo ngậm phù sa và hương vị phù sa rừng tràm phương Nam.",
+      "nguon_tu_lieu": "Quy trình Kỹ thuật Thâm canh Lúa Thơm ST25 trên Đất Lúa - Tôm",
+      "tac_gia_don_vi": "Sở Nông nghiệp và PTNT tỉnh Sóc Trăng; Kỹ sư Hồ Quang Cua",
+      "nam_xuat_ban": "2022",
+      "duong_dan_tham_khao": "https://sonongnghiep.soctrang.gov.vn",
+      "loai_thong_tin": "hien_dai"
     },
     {
       "id": "ngo-bap-thu-dong",
       "ten_cay_trong": "Ngô (Bắp)",
       "ten_goi_khac": "Bắp nếp, ngô hạt tẻ, ngô bãi bồi ven sông",
-      "nhom_cay": "Cây hoa màu",
+      "nhom_cay": "Cây hoa màu & củ",
       "khu_vuc_ap_dung": "Đồng bằng, bãi bồi sông Hồng, Bắc Trung Bộ",
       "mua_vu": "Vụ Thu Đông (chính vụ) và Vụ Xuân",
       "thoi_gian_gieo_trong": "Vụ Thu Đông: Gieo hạt từ 20/8 đến 25/9 dương lịch (để kịp trỗ cờ trước khi có rét lạnh tháng 11). Vụ Xuân: Gieo tháng 1 - 2 dương lịch.",
@@ -71,13 +106,17 @@
       "dieu_kien_canh_tac": "Đất phù sa bãi bồi ven sông, đất thịt nhẹ thoát nước tốt; ngô kỵ ngập úng và kỵ rét đậm lúc trỗ cờ thụ phấn.",
       "phuong_phap_canh_tac_truyen_thong": "Trồng bầu ngô trên đất bãi sau khi lũ rút ('đưa ngô vào bầu tranh thủ thời vụ'), tra hạt cùng tro bếp mục trộn đất mùn xốp, vun luống cao chống đổ ngã.",
       "kinh_nghiem_dan_gian": "'Trồng ngô ăn bắp, trồng lúa ăn bông'; 'Khoai đất lạ, mạ đất quen, ngô chen đất bãi'.",
-      "nguon_tu_lieu": "Kỹ thuật thâm canh ngô truyền thống - Viện Nghiên cứu Ngô; Sổ tay khuyến nông bãi bồi sông Hồng."
+      "nguon_tu_lieu": "Kỹ thuật Thâm canh Ngô Truyền thống - Viện Nghiên cứu Ngô",
+      "tac_gia_don_vi": "Viện Nghiên cứu Ngô Việt Nam",
+      "nam_xuat_ban": "2019",
+      "duong_dan_tham_khao": "http://vienngovn.com.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "khoai-lang-dong",
       "ten_cay_trong": "Khoai lang",
       "ten_goi_khac": "Khoai lang Hoàng Long, khoai lang bí, khoai lang mật",
-      "nhom_cay": "Cây củ hoa màu",
+      "nhom_cay": "Cây hoa màu & củ",
       "khu_vuc_ap_dung": "Cả nước (đặc biệt phát triển mạnh ở miền Bắc trong vụ Đông, Tây Nguyên và Đồng bằng Nam Bộ)",
       "mua_vu": "Vụ Đông (tháng 9 - 10 đến tháng 1 - 2) & Vụ Xuân Hè",
       "thoi_gian_gieo_trong": "Miền Bắc: Trồng dây khoai cuối tháng 9 đến giữa tháng 10 dương lịch. Miền Trung - Nam: Đầu mùa khô hoặc cuối mùa mưa.",
@@ -86,7 +125,11 @@
       "dieu_kien_canh_tac": "Đất cát pha, thịt nhẹ, tơi xốp, thoát nước cực tốt; độ ẩm vừa phải (khoảng 65-75%), kỵ đất úng bí chặt.",
       "phuong_phap_canh_tac_truyen_thong": "Lên luống đông tây đón nắng, chọn dây bánh tẻ mập mạp không sâu bệnh, đặt dây áp nghiêng 45 độ, bón lót phân chuồng hoai và phủ tro bếp gốc.",
       "kinh_nghiem_dan_gian": "'Khoai ruộng lạ, mạ ruộng quen' (khoai đổi đất cho củ to không bị sùng sần); 'Nhấc dây khoai lang cho củ lớn đẫy đà'.",
-      "nguon_tu_lieu": "Vân Đài Loại Ngữ - Lê Quý Đôn; Cẩm nang kinh nghiệm canh tác củ truyền thống vùng đồng bằng."
+      "nguon_tu_lieu": "Vân Đài Loại Ngữ - Lê Quý Đôn",
+      "tac_gia_don_vi": "Lê Quý Đôn (dịch thuật: Viện Sử học)",
+      "nam_xuat_ban": "1773 (tái bản 2006)",
+      "duong_dan_tham_khao": "https://thuvienquocgia.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "lac-dau-phong-xuan-thu",
@@ -101,7 +144,11 @@
       "dieu_kien_canh_tac": "Đất cát pha, thịt nhẹ tơi xốp, pH từ 5.5 - 6.5; ưa ấm, đủ ẩm khi nảy mầm và trỗ hoa, nhưng rất sợ ngập úng thối củ.",
       "phuong_phap_canh_tac_truyen_thong": "Lên luống rộng rãnh sâu, ủ hạt nứt nanh trước khi tra, bón lót vôi bột khử chua khử nấm ('không vôi không thành lạc'), tro mục và phân hoai mục.",
       "kinh_nghiem_dan_gian": "'Muốn ăn lạc thì rải vôi, muốn ăn khoai bồi đất cát'; 'Lạc xới ba lần hơn bón một lần phân'.",
-      "nguon_tu_lieu": "Tài liệu Khuyến nông Nông nghiệp Việt Nam; Nông chính dân gian miền Trung."
+      "nguon_tu_lieu": "Tài liệu Khuyến nông Cây Công nghiệp Ngắn ngày",
+      "tac_gia_don_vi": "Trung tâm Khuyến nông Quốc gia",
+      "nam_xuat_ban": "2021",
+      "duong_dan_tham_khao": "https://khuyennongvn.gov.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "dau-xanh-xuan-he",
@@ -116,13 +163,17 @@
       "dieu_kien_canh_tac": "Chịu hạn tương đối tốt, không chịu được ngập úng, ưa đất phù sa bãi bồi hoặc đất màu tơi xốp giàu hữu cơ.",
       "phuong_phap_canh_tac_truyen_thong": "Xen canh với ngô hoặc trồng sau thu hoạch lúa vụ xuân để cố định đạm sinh học cải tạo đất phì nhiêu, bón lót tro rơm rạ mục.",
       "kinh_nghiem_dan_gian": "'Trồng đỗ trồng ngô xen canh, đất màu giữ mãi mùa xanh lúa vàng'; 'Hái đậu sáng sớm hạt lành thơm ngát'.",
-      "nguon_tu_lieu": "Kinh nghiệm canh tác cây họ đậu dân gian Việt Nam; Viện Khoa học Kỹ thuật Nông nghiệp Miền Nam."
+      "nguon_tu_lieu": "Kinh nghiệm Canh tác Cây Họ Đậu Dân gian Việt Nam",
+      "tac_gia_don_vi": "Viện Khoa học Kỹ thuật Nông nghiệp Miền Nam",
+      "nam_xuat_ban": "2018",
+      "duong_dan_tham_khao": "http://iasvn.org",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "rau-muong-nuoc-can",
       "ten_cay_trong": "Rau muống",
       "ten_goi_khac": "Rau muống cạn, rau muống nước bè",
-      "nhom_cay": "Rau ăn lá",
+      "nhom_cay": "Rau ăn lá & quả",
       "khu_vuc_ap_dung": "Cả nước",
       "mua_vu": "Chính vụ: Tháng 3 đến tháng 9 âm lịch (mùa hè - thu)",
       "thoi_gian_gieo_trong": "Gieo hạt hoặc cấy ngọn: Từ tháng 2 đến tháng 4 âm lịch. Với vùng Nam Bộ có thể trồng quanh năm.",
@@ -131,13 +182,17 @@
       "dieu_kien_canh_tac": "Cây nhiệt đới ưa nhiệt độ cao (25-35°C), ưa nước, đủ ánh sáng; mùa đông miền Bắc cây còi cọc và lụi dần.",
       "phuong_phap_canh_tac_truyen_thong": "Thả bè nổi trên ao hồ hoặc cấy bùn nước ngập nửa thân mầm; với rau muống cạn lên luống bón lót bùn ao khô đập nhỏ trộn phân chuồng ủ hoai.",
       "kinh_nghiem_dan_gian": "'Anh đi anh nhớ quê nhà, nhớ canh rau muống nhớ cà dầm tương'; 'Mưa rào tháng bảy rau muống nhảy bờ'.",
-      "nguon_tu_lieu": "Văn hóa ẩm thực và nông nghiệp Việt Nam; Cục Trồng trọt."
+      "nguon_tu_lieu": "Văn hóa Ẩm thực và Nông nghiệp Cổ truyền Việt Nam",
+      "tac_gia_don_vi": "Cục Trồng trọt",
+      "nam_xuat_ban": "2019",
+      "duong_dan_tham_khao": "https://www.cuctrongtrot.gov.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "ca-chua-vu-dong",
       "ten_cay_trong": "Cà chua",
       "ten_goi_khac": "Cà chua múi truyền thống, cà chua quả hồng",
-      "nhom_cay": "Rau ăn quả",
+      "nhom_cay": "Rau ăn lá & quả",
       "khu_vuc_ap_dung": "Đồng bằng sông Hồng, Trung du Bắc Bộ, vùng cao Lâm Đồng (Đà Lạt)",
       "mua_vu": "Vụ Đông (chính vụ miền Bắc: gieo tháng 9-10, thu hoạch tháng 12-2) & Vụ Đông Xuân Đà Lạt",
       "thoi_gian_gieo_trong": "Gieo hạt trong vườn ươm: Cuối tháng 9 đến đầu tháng 10 dương lịch. Trồng ra luống: Giữa tháng 10 đến đầu tháng 11 dương lịch.",
@@ -146,13 +201,17 @@
       "dieu_kien_canh_tac": "Ưa khí hậu mát mẻ, khô ráo (nhiệt độ thích hợp 18-25°C), đất phù sa màu mỡ tơi xốp, kỵ úng nước rễ.",
       "phuong_phap_canh_tac_truyen_thong": "Lên giàn cọc tre nứa truyền thống giữ cây vững trước gió bấc, bón gốc bằng phân chuồng mục và tro bếp, xới xáo luống cao.",
       "kinh_nghiem_dan_gian": "'Cà chua vụ bấc sai cành trĩu quả'; 'Làm giàn buộc rạ, quả đỏ trùm chăn'.",
-      "nguon_tu_lieu": "Kỹ thuật trồng rau truyền thống - Viện Nghiên cứu Rau quả Việt Nam."
+      "nguon_tu_lieu": "Kỹ thuật Trồng Rau Vụ Đông Truyền thống",
+      "tac_gia_don_vi": "Viện Nghiên cứu Rau quả Việt Nam (FAVRI)",
+      "nam_xuat_ban": "2020",
+      "duong_dan_tham_khao": "http://favri.org.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "buoi-dien-phuc-trach",
       "ten_cay_trong": "Cây Bưởi",
       "ten_goi_khac": "Bưởi Diễn (Hà Nội), Bưởi Phúc Trạch (Hà Tĩnh), Bưởi Năm Roi (Vĩnh Long)",
-      "nhom_cay": "Cây ăn quả lâu năm",
+      "nhom_cay": "Cây công nghiệp & ăn quả",
       "khu_vuc_ap_dung": "Miền Bắc (Đồng bằng & Trung du), Bắc Trung Bộ, Đồng bằng Sông Cửu Long",
       "mua_vu": "Cây lâu năm ra hoa đầu xuân (tháng 2-3 dương lịch), thu hoạch vụ Thu Đông dịp Tết.",
       "thoi_gian_gieo_trong": "Trồng cây giống ghép hoặc chiết cành: Đầu xuân (tháng 2-3 DL) hoặc đầu mùa mưa (tháng 8-9 DL).",
@@ -161,13 +220,17 @@
       "dieu_kien_canh_tac": "Đất phù sa bồi, đất thịt pha cát thoát nước tốt tầng đất mặt dày trên 1m; không chịu úng ngập rễ.",
       "phuong_phap_canh_tac_truyen_thong": "Quét nước vôi trắng quanh thân gốc ngăn sâu bọ leo; dùng bùn ao phơi khô đập tơi phủ gốc giữ ẩm mùa khô; neo cành chống gãy mùa mưa bão.",
       "kinh_nghiem_dan_gian": "'Bưởi Diễn để héo vỏ nhăn càng ngọt lịm'; 'Hoa bưởi nở trắng vườn xuân, ong về lấy mật đầy sân ngọt ngào'.",
-      "nguon_tu_lieu": "Hội Làm vườn Việt Nam; Địa chí Hà Nội & Lịch sử nông nghiệp Thăng Long."
+      "nguon_tu_lieu": "Kỹ thuật Thâm canh Bưởi Đặc sản Vùng miền",
+      "tac_gia_don_vi": "Hội Làm vườn Việt Nam (VACVINA)",
+      "nam_xuat_ban": "2021",
+      "duong_dan_tham_khao": "http://vacvina.org.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "che-tra-trung-du",
       "ten_cay_trong": "Cây Chè (Trà xanh)",
       "ten_goi_khac": "Chè Shan tuyết, chè trung du, chè cành lai",
-      "nhom_cay": "Cây công nghiệp lâu năm",
+      "nhom_cay": "Cây công nghiệp & ăn quả",
       "khu_vuc_ap_dung": "Trung du và miền núi Bắc Bộ (Thái Nguyên, Phú Thọ, Tuyên Quang, Hà Giang, Yên Bái), Lâm Đồng",
       "mua_vu": "Thu hái quanh năm từ tháng 3 đến tháng 11 âm lịch, nghỉ đông đốn tỉa tháng 12 đến tháng 1.",
       "thoi_gian_gieo_trong": "Trồng dặm hoặc trồng mới vào tháng 8 - 10 dương lịch khi đất ẩm hoặc tháng 2 - 3 đầu xuân.",
@@ -176,13 +239,17 @@
       "dieu_kien_canh_tac": "Đất feralit đỏ vàng chua nhẹ (pH 4.5 - 5.5), sườn đồi dốc thoải thoát nước tốt, sương mù và độ ẩm không khí cao.",
       "phuong_phap_canh_tac_truyen_thong": "Làm đất theo đường đồng mức chống xói mòn rửa trôi, trồng xen cây bóng mát (cây muồng đen) điều hòa nhiệt độ, sao chè thủ công bằng chảo gang củi lửa đều tay.",
       "kinh_nghiem_dan_gian": "'Nhất nước, nhì trà, tam bôi, tứ bình'; 'Chè xuân búp biếc giọt sương, đượm nồng hương vị quê hương nghĩa tình'.",
-      "nguon_tu_lieu": "Vân Đài Loại Ngữ (Mục Thảo mộc); Viện Khoa học Kỹ thuật Nông Lâm nghiệp miền núi phía Bắc (NOMAFSI)."
+      "nguon_tu_lieu": "Cây Chè Việt Nam - Nghiên cứu và Phát triển",
+      "tac_gia_don_vi": "Viện KHKT Nông Lâm nghiệp miền núi phía Bắc (NOMAFSI)",
+      "nam_xuat_ban": "2020",
+      "duong_dan_tham_khao": "http://nomafsi.com.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "ca-phe-robusta-tay-nguyen",
       "ten_cay_trong": "Cà phê Robusta (Cà phê vối)",
       "ten_goi_khac": "Cà phê vối Tây Nguyên",
-      "nhom_cay": "Cây công nghiệp lâu năm",
+      "nhom_cay": "Cây công nghiệp & ăn quả",
       "khu_vuc_ap_dung": "Tây Nguyên (Đắk Lắk, Gia Lai, Kon Tum, Đắk Nông, Lâm Đồng)",
       "mua_vu": "Mùa hoa nở: Tháng 1 - 3 dương lịch (mùa khô); Mùa thu hoạch: Tháng 10 - 12 dương lịch.",
       "thoi_gian_gieo_trong": "Trồng đầu mùa mưa: Tháng 5 đến tháng 7 dương lịch để cây con bén rễ khỏe trước mùa khô hạn.",
@@ -191,7 +258,51 @@
       "dieu_kien_canh_tac": "Đất đỏ bazan màu mỡ tầng dày thoát nước tốt, độ cao 500 - 800m so với mực nước biển, khí hậu nhiệt đới gió mùa có 2 mùa mưa nắng rõ rệt.",
       "phuong_phap_canh_tac_truyen_thong": "Trồng cây che bóng tầng cao (muồng đen, sầu riêng, hồ tiêu), giữ thảm cỏ tự nhiên chống xói mòn đất bazan mùa mưa và giữ ẩm mùa khô hạn.",
       "kinh_nghiem_dan_gian": "'Cà phê hoa trắng đại ngàn, giọt sương đầu sớm nở tràn cánh thơm'; 'Tưới đúng con nước đầu năm, hoa bung rực rỡ trái nằm trĩu cây'.",
-      "nguon_tu_lieu": "Viện Khoa học Kỹ thuật Nông Lâm nghiệp Tây Nguyên (WASI); Địa chí tỉnh Đắk Lắk."
+      "nguon_tu_lieu": "Kỹ thuật Thâm canh Cà phê Bền vững Vùng Tây Nguyên",
+      "tac_gia_don_vi": "Viện KHKT Nông Lâm nghiệp Tây Nguyên (WASI)",
+      "nam_xuat_ban": "2021",
+      "duong_dan_tham_khao": "http://wasi.org.vn",
+      "loai_thong_tin": "truyen_thong"
+    },
+    {
+      "id": "rau-den-com-chua-nguon",
+      "ten_cay_trong": "Rau dền cơm (Dền gai, Dền tía)",
+      "ten_goi_khac": "Dền ba màu, dền cạn vườn nhà",
+      "nhom_cay": "Rau ăn lá & quả",
+      "khu_vuc_ap_dung": "Đồng bằng sông Hồng, Bắc Trung Bộ",
+      "mua_vu": "Vụ Xuân Hè (tháng 2 - 6 âm lịch)",
+      "thoi_gian_gieo_trong": "Tra hạt luống tháng 2 đến tháng 4 âm lịch khi đất ấm.",
+      "thoi_gian_cham_soc": "Tưới nước giữ ẩm, tỉa thưa ăn dần, xới xáo nhẹ gốc.",
+      "thoi_gian_thu_hoach": "Sau 20 - 30 ngày nhổ tỉa ăn cây non hoặc ngắt ngọn nhiều lứa.",
+      "dieu_kien_canh_tac": "Đất thịt nhẹ, đất cát pha màu mỡ, chịu nóng tốt.",
+      "phuong_phap_canh_tac_truyen_thong": "Rải tro bếp mục phòng bọ nhảy cắn thủng lá, tưới nước ngâm phụ phẩm rau mục.",
+      "kinh_nghiem_dan_gian": "Cơm có canh dền giải nhiệt ngày hè oi ả.",
+      "nguon_tu_lieu": "",
+      "tac_gia_don_vi": "",
+      "nam_xuat_ban": "",
+      "duong_dan_tham_khao": "",
+      "loai_thong_tin": ""
+    },
+    {
+      "id": "cu-mai-chua-xac-dinh-khu-vuc",
+      "ten_cay_trong": "Củ mài (Hoài sơn rừng)",
+      "ten_goi_khac": "Khoai mài, sơn dược",
+      "nhom_cay": "Cây hoa màu & củ",
+      "khu_vuc_ap_dung": "Chưa xác định cụ thể theo tiểu vùng sinh thái (vùng đồi núi phân tán)",
+      "mua_vu": "Thu Đông (ước lượng theo chu kỳ tự nhiên)",
+      "thoi_gian_gieo_trong": "Chưa xác định rõ theo tháng cụ thể (chủ yếu thu hái tự nhiên và trồng phân tán đầu mùa mưa)",
+      "thoi_gian_cham_soc": "Cắm cọc leo cho dây phát triển, không để úng nước ngập rễ củ.",
+      "thoi_gian_thu_hoach": "Chưa xác định rõ (khi dây tàn lụi vào mùa đông khô hanh).",
+      "dieu_kien_canh_tac": "Đất sỏi son đồi dốc thoát nước cực tốt, mùn rừng tự nhiên.",
+      "phuong_phap_canh_tac_truyen_thong": "Đào rãnh đặt cành tre dẫn củ mọc ngang để dễ thu hoạch tránh củ đâm sâu khó đào.",
+      "kinh_nghiem_dan_gian": "Củ mài nấu chè mát dạ thơm bùi.",
+      "nguon_tu_lieu": "Kinh nghiệm Đi rừng Dân gian Vùng Cao",
+      "tac_gia_don_vi": "Tư liệu sưu tầm dân gian bản địa",
+      "nam_xuat_ban": "",
+      "duong_dan_tham_khao": "",
+      "loai_thong_tin": "truyen_thong",
+      "khu_vuc_chua_xac_dinh": true,
+      "thoi_gian_chua_xac_dinh": true
     }
   ],
   "nhom_cay_trong": [
@@ -235,7 +346,11 @@
       "tom_tat": "Kinh nghiệm phơi ải đất ruộng sau vụ gặt để diệt trừ mầm mống nấm bệnh và kích hoạt khoáng chất tự nhiên.",
       "chi_tiet": "Theo kinh nghiệm ngàn đời của nhà nông Việt Nam: 'Một hòn đất nỏ bằng một giỏ phân'. Sau khi thu hoạch vụ mùa vào mùa đông, nông dân tiến hành cày lật đất thành từng tảng lớn rồi để phơi nắng phơi gió (phơi ải). Ánh nắng và gió hanh làm đất nứt nẻ, oxy thâm nhập sâu vào các tầng đất, thúc đẩy quá trình khoáng hóa các chất hữu cơ khó tiêu thành dinh dưỡng dễ hấp thu, đồng thời tiêu diệt triệt để ấu trùng sâu hại và mầm bệnh trong đất. Đối với vụ hè thì dùng phương pháp làm ngấu đất bằng cách cày dầm cho rơm rạ mục nát nhanh chóng dưới lớp bùn nhuyễn.",
       "ca_dao_tuc_ngu": "'Một hòn đất nỏ bằng một giỏ phân'; 'Đất nỏ phân màu, bông dầy hạt chắc'.",
-      "nguon_tu_lieu": "Vân Đài Loại Ngữ - Lê Quý Đôn (1773); Cẩm nang nông học dân gian Việt Nam."
+      "nguon_tu_lieu": "Vân Đài Loại Ngữ - Lê Quý Đôn (1773); Cẩm nang nông học dân gian Việt Nam.",
+      "tac_gia_don_vi": "Lê Quý Đôn",
+      "nam_xuat_ban": "1773",
+      "duong_dan_tham_khao": "https://thuvienquocgia.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "tri-thuc-sau-benh-sinh-hoc",
@@ -244,7 +359,11 @@
       "tom_tat": "Cách sử dụng tro bếp, nước ngâm tỏi ớt gừng, lá xoan và vịt thả ruộng để diệt sâu rầy tự nhiên không độc hại.",
       "chi_tiet": "Nông dân truyền thống sử dụng tro bếp mịn rắc lên lá rau và lúa sáng sớm còn đọng sương để làm xót và tiêu diệt bọ nhảy, rầy mềm và ốc bươu con; rắc vôi bột để khử chua và sát trùng mầm nấm bệnh. Chế phẩm ngâm củ gừng, ớt cay và tỏi tươi giã nát cùng rượu trắng trong 7-10 ngày tạo ra dung dịch xua đuổi sâu cuốn lá, rầy xanh cực kỳ hữu hiệu. Ngoài ra, việc nuôi vịt đàn lội ruộng lúa non vừa giúp sục bùn làm cỏ vừa ăn sạch rầy nâu và ốc non mà không tốn công nhổ cỏ.",
       "ca_dao_tuc_ngu": "'Vịt chạy đồng dọn sạch sâu rầy'; 'Tro bếp rắc sương, sâu rầy tan biến'.",
-      "nguon_tu_lieu": "Kho tàng kinh nghiệm sản xuất nông nghiệp cổ truyền Việt Nam; Trung tâm Khuyến nông Quốc gia."
+      "nguon_tu_lieu": "Kho tàng Kinh nghiệm Sản xuất Nông nghiệp Cổ truyền Việt Nam",
+      "tac_gia_don_vi": "Trung tâm Khuyến nông Quốc gia",
+      "nam_xuat_ban": "2019",
+      "duong_dan_tham_khao": "https://khuyennongvn.gov.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "tri-thuc-dieu-tiet-nuoc",
@@ -253,7 +372,11 @@
       "tom_tat": "Triết lý canh tác lúa nước ngàn đời đúc kết thứ tự ưu tiên sống còn đối với sản xuất nông nghiệp.",
       "chi_tiet": "1. Nhất nước: Nước là yếu tố then chốt hàng đầu, lúa nước không thể thiếu nước ở các thời kỳ làm đòng, trỗ bông và thụ phấn. Nông dân điều tiết 'nước chân vịt' (ngập 2-3cm) khi đẻ nhánh và tháo cạn phơi ruộng khi lúa phân hóa đòng để rễ ăn sâu. 2. Nhì phân: Cung cấp dinh dưỡng qua phân chuồng ủ hoai, phân xanh, tro bếp mục và bùn ao. 3. Tam cần: Sự chuyên cần, chăm chỉ xới xáo sục bùn tỉa dặm của người làm nông ('Trông trời trông đất trông mây'). 4. Tứ giống: Chọn lọc hạt giống chắc mẩy, thuần khiết, ngâm ủ đúng kỹ thuật.",
       "ca_dao_tuc_ngu": "'Nhất nước, nhì phân, tam cần, tứ giống'; 'Lúa chiêm lấp ló đầu bờ, hễ nghe tiếng sấm phất cờ mà lên'.",
-      "nguon_tu_lieu": "Văn hóa Nông nghiệp Lúa nước Việt Nam - GS.TS Trần Quốc Vượng; Tục ngữ ca dao Việt Nam."
+      "nguon_tu_lieu": "Văn hóa Nông nghiệp Lúa nước Việt Nam",
+      "tac_gia_don_vi": "GS.TS Trần Quốc Vượng",
+      "nam_xuat_ban": "1998",
+      "duong_dan_tham_khao": "https://nxbkhoahocxahoi.com.vn",
+      "loai_thong_tin": "truyen_thong"
     },
     {
       "id": "tri-thuc-luan-canh-xen-canh",
@@ -262,7 +385,37 @@
       "tom_tat": "Tận dụng vi khuẩn nốt sần rễ đậu cố định đạm sinh học, cắt đứt chu kỳ sâu bệnh giữa các mùa vụ.",
       "chi_tiet": "Mô hình luân canh '2 lúa 1 màu' hoặc '1 lúa 2 màu' là đỉnh cao tri thức nông nghiệp truyền thống. Sau vụ lúa mùa, nông dân đưa ngay các loại cây ưa lạnh hoặc cây họ đậu (lạc, đậu tương, đậu xanh) vào sản xuất vụ đông. Rễ cây họ đậu chứa vi khuẩn Rhizobium tự nhiên có khả năng chuyển hóa nitơ từ không khí thành hợp chất đạm hữu cơ bồi bổ đất, giúp vụ lúa tiếp theo sinh trưởng tốt mà không cần nhiều phân bón bên ngoài, đồng thời ngắt quãng vòng đời của mầm sâu đục thân và rầy nâu.",
       "ca_dao_tuc_ngu": "'Lúa đỗ xen cành, đất màu không bạc'; 'Vụ chiêm ăn củ, vụ mùa ăn bông'.",
-      "nguon_tu_lieu": "Học viện Nông nghiệp Việt Nam; Nông chính Toàn thư biên khảo."
+      "nguon_tu_lieu": "Giáo trình Canh tác Học Bền vững",
+      "tac_gia_don_vi": "Học viện Nông nghiệp Việt Nam (VNUA)",
+      "nam_xuat_ban": "2021",
+      "duong_dan_tham_khao": "https://vnua.edu.vn",
+      "loai_thong_tin": "truyen_thong"
+    },
+    {
+      "id": "tri-thuc-phan-huu-co-vi-sinh",
+      "chu_de": "Ủ phân hữu cơ vi sinh bón gốc công nghệ IMO",
+      "phan_loai": "Dinh dưỡng hiện đại cải tiến",
+      "tom_tat": "Ứng dụng vi sinh vật bản địa (IMO) để ủ phân chuồng và phụ phẩm rơm rạ thành phân hữu cơ sinh học chất lượng cao.",
+      "chi_tiet": "Nhân nuôi hệ vi sinh vật bản địa (IMO) từ men cơm và đường mía, phối trộn với phân gia súc gia cầm và rơm rạ mục. Quá trình ủ nóng đạt 60-65°C trong 20-25 ngày giúp tiêu diệt hạt cỏ dại và mầm nấm tuyến trùng, tạo ra nguồn phân hữu cơ giàu axit humic bón lót cải tạo đất chai cứng bạc màu.",
+      "ca_dao_tuc_ngu": "Đất khỏe cây lành, mùa màng bội thu.",
+      "nguon_tu_lieu": "Quy trình Sản xuất Phân bón Hữu cơ Vi sinh IMO",
+      "tac_gia_don_vi": "Viện Thổ nhưỡng Nông hóa (SFRI)",
+      "nam_xuat_ban": "2023",
+      "duong_dan_tham_khao": "http://sfri.org.vn",
+      "loai_thong_tin": "hien_dai"
+    },
+    {
+      "id": "tri-thuc-chua-nguon-dan-gian",
+      "chu_de": "Mẹo dân gian xem kiến dời tổ đoán mưa bão",
+      "phan_loai": "Kinh nghiệm thời tiết truyền khẩu",
+      "tom_tat": "Quan sát tập tính kiến đắp tổ cao để chuẩn bị phòng mưa giông lụt lội.",
+      "chi_tiet": "Kinh nghiệm của người già ở thôn quê cho thấy khi đàn kiến đen dời tổ từ dưới gốc lên các cành cây cao hoặc đắp thành lũy quanh miệng tổ thì thường trong vòng 1-2 ngày tới trời sẽ mưa to hoặc có nước lũ dâng.",
+      "ca_dao_tuc_ngu": "'Kiến cánh vỡ tổ bay ra, bão táp mưa sa gần kề'; 'Kiến bò lên cây chuẩn bị mưa đầy'.",
+      "nguon_tu_lieu": "",
+      "tac_gia_don_vi": "",
+      "nam_xuat_ban": "",
+      "duong_dan_tham_khao": "",
+      "loai_thong_tin": ""
     }
   ],
   "tai_lieu_tham_khao": [
@@ -273,7 +426,8 @@
       "nam_xuat_ban": "1773 (Thời Hậu Lê)",
       "loai_tai_lieu": "Sách cổ bách khoa toàn thư",
       "mo_ta": "Bộ sách bách khoa đồ sộ đầu tiên của Việt Nam, trong đó thiên Nông sự ghi chép tỉ mỉ về giống lúa, ngũ cốc, tiết khí, kỹ thuật làm đất ải, cách ủ phân và kinh nghiệm thời tiết nhà nông nước ta thế kỷ 18.",
-      "gia_tri": "Tư liệu lịch sử gốc có giá trị học thuật cao nhất về nền nông nghiệp truyền thống Đại Việt."
+      "gia_tri": "Tư liệu lịch sử gốc có giá trị học thuật cao nhất về nền nông nghiệp truyền thống Đại Việt.",
+      "duong_dan_tham_khao": "https://thuvienquocgia.vn"
     },
     {
       "id": "tl-02",
@@ -282,7 +436,8 @@
       "nam_xuat_ban": "Nhiều ấn bản (NXB Khoa học Xã hội)",
       "loai_tai_lieu": "Văn học dân gian & Tri thức bản địa",
       "mo_ta": "Tập hợp hàng nghìn câu ca dao, tục ngữ phản ánh kinh nghiệm ngàn năm quan sát thiên văn, vũ trụ, mây gió, sấm chớp, tập tính động thực vật và lịch nông vụ của cư dân lúa nước Việt Nam.",
-      "gia_tri": "Nguồn tri thức trực quan, dễ nhớ, gắn liền mật thiết với tâm hồn và sinh hoạt của người nông dân."
+      "gia_tri": "Nguồn tri thức trực quan, dễ nhớ, gắn liền mật thiết với tâm hồn và sinh hoạt của người nông dân.",
+      "duong_dan_tham_khao": "https://nxbkhoahocxahoi.com.vn"
     },
     {
       "id": "tl-03",
@@ -291,7 +446,8 @@
       "nam_xuat_ban": "Cập nhật hàng năm",
       "loai_tai_lieu": "Tài liệu chỉ đạo kỹ thuật chuyên ngành",
       "mo_ta": "Khung chỉ đạo thời vụ chính thức phân theo từng vùng sinh thái (Đồng bằng sông Hồng, Bắc Trung Bộ, Duyên hải Nam Trung Bộ, Tây Nguyên, Đông Nam Bộ, Đồng bằng Sông Cửu Long).",
-      "gia_tri": "Cơ sở thực tiễn xác thực tính vùng miền, cảnh báo việc không áp dụng lịch nông vụ chung cho mọi địa phương."
+      "gia_tri": "Cơ sở thực tiễn xác thực tính vùng miền, cảnh báo việc không áp dụng lịch nông vụ chung cho mọi địa phương.",
+      "duong_dan_tham_khao": "https://www.cuctrongtrot.gov.vn"
     },
     {
       "id": "tl-04",
@@ -300,7 +456,8 @@
       "nam_xuat_ban": "NXB Nông nghiệp",
       "loai_tai_lieu": "Giáo trình Đại học & Nghiên cứu khoa học",
       "mo_ta": "Cung cấp cơ sở khoa học đối chứng với các kinh nghiệm dân gian truyền thống (như sục bùn làm cỏ, đất ải, ngâm ủ nước ấm 3 sôi 2 lạnh, luân canh xen canh họ đậu).",
-      "gia_tri": "Cầu nối giữa tri thức khoa học hiện đại và tinh hoa bản địa nông nghiệp."
+      "gia_tri": "Cầu nối giữa tri thức khoa học hiện đại và tinh hoa bản địa nông nghiệp.",
+      "duong_dan_tham_khao": "https://vnua.edu.vn"
     },
     {
       "id": "tl-05",
@@ -309,7 +466,90 @@
       "nam_xuat_ban": "NXB Nông nghiệp",
       "loai_tai_lieu": "Công trình nghiên cứu chuyên sâu Nam Bộ",
       "mo_ta": "Tổng kết kinh nghiệm cha ông vùng khẩn hoang Nam Bộ kết hợp mô hình canh tác lúa - tôm, lúa mùa nổi thích ứng tự nhiên với mùa lũ và xâm nhập mặn.",
-      "gia_tri": "Cung cấp tư liệu đặc trưng cho sinh thái lúa nước phương Nam."
+      "gia_tri": "Cung cấp tư liệu đặc trưng cho sinh thái lúa nước phương Nam.",
+      "duong_dan_tham_khao": "http://clrri.org"
+    },
+    {
+      "id": "tl-06",
+      "ten_tai_lieu": "Đại Nam Nhất Thống Chí (Mục Thổ sản & Khí hậu Nông vụ các tỉnh)",
+      "tac_gia": "Quốc Sử Quán Triều Nguyễn",
+      "nam_xuat_ban": "1882 (Triều Tự Đức)",
+      "loai_tai_lieu": "Bộ chính sử địa chí quốc gia",
+      "mo_ta": "Công trình địa chí đồ sộ của triều Nguyễn ghi chép hệ thống về các giống lúa bản địa (lúa Ba Trăng, lúa Chiêm, lúa Mùa), các loại cây hoa màu, đặc sản thổ nhưỡng và khí hậu nông vụ từng phủ, huyện từ Bắc chí Nam.",
+      "gia_tri": "Tư liệu lịch sử xác thực tính vùng miền và sự đa dạng giống cây trồng truyền thống Việt Nam thế kỷ 19.",
+      "duong_dan_tham_khao": "https://thuvienquocgia.vn"
+    },
+    {
+      "id": "tl-07",
+      "ten_tai_lieu": "Lịch Nông Cổ & 24 Tiết Khí Dân Gian Việt Nam",
+      "tac_gia": "Hội Văn nghệ Dân gian Việt Nam",
+      "nam_xuat_ban": "2015",
+      "loai_tai_lieu": "Nghiên cứu Văn hóa & Tri thức Bản địa",
+      "mo_ta": "Khảo cứu chuyên sâu về lịch nông nghiệp âm dương kết hợp, cách người nông dân quan sát 24 tiết khí, trăng sao và hành vi của muông thú để định ngày xuống giống, cấy lúa, tỉa đỗ và gặt hái.",
+      "gia_tri": "Nền tảng lý luận về cách tính lịch nông vụ và tri thức thiên văn dân gian phục vụ sản xuất.",
+      "duong_dan_tham_khao": "https://hoivannhedangian.vn"
+    },
+    {
+      "id": "tl-08",
+      "ten_tai_lieu": "Sổ Tay Khuyến Nông: Kỹ Thuật Canh Tác Cây Ăn Quả và Cây Công Nghiệp Lâu Năm Vùng Tây Nguyên và Duyên Hải Nam Trung Bộ",
+      "tac_gia": "Viện KHKT Nông Lâm nghiệp Tây Nguyên (WASI) phối hợp Trung tâm Khuyến nông Quốc gia",
+      "nam_xuat_ban": "2022",
+      "loai_tai_lieu": "Cẩm nang hướng dẫn kỹ thuật chuyên ngành",
+      "mo_ta": "Tổng kết kinh nghiệm giữ thảm cỏ tự nhiên chống xói mòn đất bazan mùa mưa, kỹ thuật tưới nước nở hoa cà phê theo chu kỳ khô hạn và phòng trừ bệnh thối rễ bằng chế phẩm sinh học.",
+      "gia_tri": "Tư liệu thực tiễn cho canh tác cây công nghiệp và cây lâu năm vùng cao nguyên.",
+      "duong_dan_tham_khao": "http://wasi.org.vn"
+    },
+    {
+      "id": "tl-09",
+      "ten_tai_lieu": "Kinh Nghiệm Canh Tác Nông Nghiệp Cổ Truyền Vùng Đất Nam Bộ",
+      "tac_gia": "Nhà nghiên cứu Sơn Nam",
+      "nam_xuat_ban": "1984 (NXB Trẻ tái bản 2014)",
+      "loai_tai_lieu": "Nghiên cứu Lịch sử - Văn hóa Dân gian Khẩn hoang",
+      "mo_ta": "Ghi chép sinh động về văn hóa khẩn hoang, kỹ thuật canh tác lúa sạ ngầm, lúa mùa nổi vùng Đồng Tháp Mười, cách đắp bờ thau chua rửa phèn và tri thức nương theo con nước rong - nước kém của lưu dân phương Nam.",
+      "gia_tri": "Nguồn tư liệu giàu tính lịch sử về bản sắc nông nghiệp vùng châu thổ sông Cửu Long.",
+      "duong_dan_tham_khao": "https://nxbtre.com.vn"
+    }
+  ],
+  "danh_sach_dong_gop": [
+    {
+      "id": "dg-01",
+      "ho_ten": "Cụ Trần Đình Trọng (82 tuổi)",
+      "vai_tro": "Nông dân lão thành - Người cung cấp tri thức bản địa",
+      "don_vi_dia_phuong": "Xã Hải Anh, huyện Hải Hậu, tỉnh Nam Định",
+      "noi_dung_dong_gop": "Kinh nghiệm canh tác lúa Tám Xoan cổ truyền, kỹ thuật làm đất ải phơi khô đồng chiêm trũng và các câu ca dao dự báo sương muối vụ Đông Xuân vùng ven biển Nam Định.",
+      "trang_thai_xac_nhan": true,
+      "dong_y_cong_khai": true,
+      "ngay_ghi_nhan": "15/04/2026"
+    },
+    {
+      "id": "dg-02",
+      "ho_ten": "ThS. Nguyễn Thị Thu Hương",
+      "vai_tro": "Nhà nghiên cứu văn hóa nông nghiệp dân gian",
+      "don_vi_dia_phuong": "Viện Nghiên cứu Phát triển Nông thôn Việt Nam",
+      "noi_dung_dong_gop": "Sưu tầm và đối chiếu 48 câu ca dao tục ngữ về con nước triều cường và lịch xuống giống lúa Hè Thu vùng Tứ giác Long Xuyên.",
+      "trang_thai_xac_nhan": true,
+      "dong_y_cong_khai": true,
+      "ngay_ghi_nhan": "02/06/2026"
+    },
+    {
+      "id": "dg-03",
+      "ho_ten": "Bác Lê Văn Sáu (Sáu Nông)",
+      "vai_tro": "Người sưu tầm mẹo thảo mộc trừ sâu bệnh",
+      "don_vi_dia_phuong": "Hợp tác xã Nông nghiệp Sinh thái Chợ Mới, tỉnh An Giang",
+      "noi_dung_dong_gop": "Phương pháp giã củ gừng, tỏi tươi và ớt hiểm ngâm rượu trắng 35 độ xua đuổi rầy nâu và sâu đục thân trên ruộng lúa mùa nổi.",
+      "trang_thai_xac_nhan": true,
+      "dong_y_cong_khai": true,
+      "ngay_ghi_nhan": "20/07/2026"
+    },
+    {
+      "id": "dg-04",
+      "ho_ten": "Chi hội Khuyến nông Vùng cao Bắc Hà",
+      "vai_tro": "Đơn vị đóng góp tư liệu địa phương",
+      "don_vi_dia_phuong": "Huyện Bắc Hà, tỉnh Lào Cai",
+      "noi_dung_dong_gop": "Cung cấp khung thời vụ ngô bắp nương và kinh nghiệm canh tác đậu tương trên ruộng bậc thang chống xói mòn sườn dốc.",
+      "trang_thai_xac_nhan": true,
+      "dong_y_cong_khai": true,
+      "ngay_ghi_nhan": "10/08/2026"
     }
   ]
 }

@@ -12,6 +12,12 @@ export interface NongVuRecord {
   phuong_phap_canh_tac_truyen_thong: string;
   kinh_nghiem_dan_gian: string;
   nguon_tu_lieu: string;
+  tac_gia_don_vi?: string;
+  nam_xuat_ban?: string;
+  duong_dan_tham_khao?: string;
+  loai_thong_tin?: 'truyen_thong' | 'hien_dai' | 'chua_xac_dinh';
+  khu_vuc_chua_xac_dinh?: boolean;
+  thoi_gian_chua_xac_dinh?: boolean;
 }
 
 export interface TietKhi {
@@ -28,6 +34,10 @@ export interface TriThuc {
   chi_tiet: string;
   ca_dao_tuc_ngu: string;
   nguon_tu_lieu: string;
+  tac_gia_don_vi?: string;
+  nam_xuat_ban?: string;
+  duong_dan_tham_khao?: string;
+  loai_thong_tin?: 'truyen_thong' | 'hien_dai' | 'chua_xac_dinh';
 }
 
 export interface TaiLieu {
@@ -38,6 +48,18 @@ export interface TaiLieu {
   loai_tai_lieu: string;
   mo_ta: string;
   gia_tri: string;
+  duong_dan_tham_khao?: string;
+}
+
+export interface DongGopTuLieu {
+  id: string;
+  ho_ten: string;
+  vai_tro: string;
+  don_vi_dia_phuong: string;
+  noi_dung_dong_gop: string;
+  trang_thai_xac_nhan: boolean;
+  dong_y_cong_khai: boolean;
+  ngay_ghi_nhan: string;
 }
 
 export interface NhomCayTrong {
@@ -54,6 +76,7 @@ export interface NongVuDatabase {
   tiet_khi_24: TietKhi[];
   tri_thuc_canh_tac: TriThuc[];
   tai_lieu_tham_khao: TaiLieu[];
+  danh_sach_dong_gop?: DongGopTuLieu[];
 }
 
 export interface GeminiAnswer {

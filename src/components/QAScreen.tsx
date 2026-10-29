@@ -161,7 +161,7 @@ ${currentResult.limitationNotice ? `Lưu ý: ${currentResult.limitationNotice}` 
             <Sparkles className="w-3.5 h-3.5" />
             <span>Trợ lý Đối chiếu Dữ liệu Nông vụ Gemini</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-serif font-bold text-white tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-serif font-bold text-white">
             Hỏi Đáp Mùa Vụ & Kỹ Thuật Canh Tác
           </h1>
           <p className="text-emerald-100/90 text-sm leading-relaxed">
@@ -342,7 +342,7 @@ ${currentResult.limitationNotice ? `Lưu ý: ${currentResult.limitationNotice}` 
 
           {/* Main Content Body */}
           <div className="p-6 sm:p-8 space-y-4">
-            <h3 className="text-sm font-bold text-stone-500 uppercase tracking-wider">
+            <h3 className="text-sm font-bold text-stone-600">
               Nội dung tư liệu & giải đáp canh tác:
             </h3>
             <div className="prose prose-stone max-w-none text-stone-800 text-sm sm:text-base leading-relaxed whitespace-pre-line font-normal">

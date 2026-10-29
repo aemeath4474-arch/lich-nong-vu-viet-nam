@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NongVuDatabase, NongVuRecord } from '../types.ts';
+import { NongVuDatabase, NongVuRecord, TaiLieu } from '../types.ts';
 import { 
   Library, 
   BookMarked, 
@@ -14,6 +14,7 @@ import {
   Calendar,
   AlertCircle
 } from 'lucide-react';
+import { buildSourceCitation } from '../utils/sourceUtils.ts';
 
 interface SourcesScreenProps {
   data: NongVuDatabase;
@@ -26,6 +27,10 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+
+  // Citation copy toast state
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // Form state for adding custom crop record into the empty structure
   const [formData, setFormData] = useState<NongVuRecord>({
@@ -41,6 +46,10 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
     phuong_phap_canh_tac_truyen_thong: '',
     kinh_nghiem_dan_gian: '',
     nguon_tu_lieu: '',
+    tac_gia_don_vi: '',
+    nam_xuat_ban: '',
+    duong_dan_tham_khao: '',
+    loai_thong_tin: 'truyen_thong',
   });
 
   const emptyTemplateString = JSON.stringify(data.cau_truc_mau_rong, null, 2);
@@ -60,6 +69,23 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleCopyCitation = (tl: TaiLieu) => {
+    const citationParts: string[] = [];
+    if (tl.tac_gia) citationParts.push(tl.tac_gia);
+    if (tl.nam_xuat_ban) citationParts.push(`(${tl.nam_xuat_ban})`);
+    citationParts.push(tl.ten_tai_lieu);
+    if (tl.duong_dan_tham_khao) citationParts.push(`Đường dẫn: ${tl.duong_dan_tham_khao}`);
+
+    const str = citationParts.join('. ');
+    navigator.clipboard.writeText(str);
+    setCopiedId(tl.id);
+    setToastMessage(`Đã sao chép trích dẫn: "${tl.ten_tai_lieu}"`);
+    setTimeout(() => {
+      setCopiedId(null);
+      setToastMessage(null);
+    }, 2500);
   };
 
   const handleFormSubmit = async (e: React.FormEvent) => {
@@ -105,6 +131,10 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
         phuong_phap_canh_tac_truyen_thong: '',
         kinh_nghiem_dan_gian: '',
         nguon_tu_lieu: '',
+        tac_gia_don_vi: '',
+        nam_xuat_ban: '',
+        duong_dan_tham_khao: '',
+        loai_thong_tin: 'truyen_thong',
       });
 
       setTimeout(() => setSubmitSuccess(false), 4000);
@@ -118,6 +148,14 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
   return (
     <div className="space-y-10 pb-12">
       
+      {/* Toast Feedback */}
+      {toastMessage && (
+        <div className="fixed bottom-20 right-4 z-50 bg-stone-900 text-white text-xs px-4 py-2.5 rounded-xl shadow-xl border border-stone-700 flex items-center gap-2 animate-in slide-in-from-bottom duration-200">
+          <Check className="w-4 h-4 text-emerald-400" />
+          <span>{toastMessage}</span>
+        </div>
+      )}
+
       {/* Title & Introduction */}
       <div className="bg-gradient-to-br from-stone-900 to-emerald-950 text-white rounded-3xl p-6 sm:p-10 shadow-lg relative overflow-hidden">
         <div className="max-w-3xl space-y-4">
@@ -125,7 +163,7 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
             <Library className="w-3.5 h-3.5" />
             <span>Nguồn Dữ Liệu Nông Nghiệp Khách Quan & Chính Thống</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">
+          <h1 className="text-3xl sm:text-4xl font-serif font-bold text-white">
             Nguồn Tư Liệu & Cơ Sở Dữ Liệu Nông Vụ
           </h1>
           <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
@@ -150,21 +188,30 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
           {data.tai_lieu_tham_khao.map((tl) => (
             <div 
               key={tl.id}
-              className="bg-white rounded-2xl border border-stone-200 p-6 shadow-xs hover:border-emerald-500/80 hover:shadow-md transition-all flex flex-col justify-between space-y-4"
+              className="bg-white rounded-3xl border border-stone-200 p-6 shadow-xs hover:border-emerald-500 hover:shadow-md transition-all flex flex-col justify-between space-y-4"
             >
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-xs">
                   <span className="font-semibold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
                     {tl.loai_tai_lieu}
                   </span>
-                  <span className="text-stone-400 font-mono">{tl.nam_xuat_ban}</span>
+                  
+                  {/* Requirement 4: Copy Citation */}
+                  <button
+                    onClick={() => handleCopyCitation(tl)}
+                    className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-stone-100 hover:bg-emerald-50 text-stone-700 hover:text-emerald-800 text-[11px] font-semibold border border-stone-200 transition-colors"
+                    title="Sao chép trích dẫn nguồn"
+                  >
+                    {copiedId === tl.id ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
+                    <span>{copiedId === tl.id ? 'Đã sao chép' : 'Sao chép trích dẫn nguồn'}</span>
+                  </button>
                 </div>
 
                 <h3 className="text-lg font-serif font-bold text-stone-900">
                   {tl.ten_tai_lieu}
                 </h3>
                 <p className="text-xs font-semibold text-amber-800">
-                  Tác giả / Cơ quan biên soạn: {tl.tac_gia}
+                  Tác giả / Cơ quan biên soạn: {tl.tac_gia} ({tl.nam_xuat_ban})
                 </p>
 
                 <p className="text-stone-600 text-xs sm:text-sm leading-relaxed pt-1">
@@ -172,9 +219,18 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
                 </p>
               </div>
 
-              <div className="bg-stone-50 rounded-xl p-3 border border-stone-200 text-xs text-stone-700">
-                <strong className="text-stone-900 block mb-0.5">Giá trị khoa học & lịch sử:</strong>
+              <div className="bg-stone-50 rounded-2xl p-3.5 border border-stone-200 text-xs text-stone-700 space-y-1">
+                <strong className="text-stone-900 block">Giá trị khoa học & lịch sử:</strong>
                 <p>{tl.gia_tri}</p>
+                {tl.duong_dan_tham_khao && (
+                  <div className="pt-1.5 border-t border-stone-200 flex items-center gap-1 text-[11px]">
+                    <span className="text-stone-500">Đường dẫn tham khảo:</span>
+                    <a href={tl.duong_dan_tham_khao} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline font-medium flex items-center gap-0.5 truncate">
+                      <span>{tl.duong_dan_tham_khao}</span>
+                      <ExternalLink className="w-3 h-3 shrink-0" />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -185,7 +241,7 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
       <section className="bg-stone-100 rounded-3xl p-6 sm:p-8 border border-stone-200 space-y-6">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+            <div className="flex items-center gap-2 text-emerald-800 text-xs font-bold">
               <FileCode className="w-4 h-4" />
               <span>Cấu trúc tệp dữ liệu nongvu.json</span>
             </div>
@@ -193,7 +249,7 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
               Cấu Trúc Dữ Liệu Rỗng Để Bổ Sung Thực Tế
             </h3>
             <p className="text-stone-600 text-sm mt-1 max-w-2xl">
-              Hệ thống cung cấp sẵn mẫu bản ghi rỗng gồm đúng 11 trường thông tin chuẩn mực để bạn có thể tự sao chép hoặc bổ sung dữ liệu địa phương vào tệp <code>nongvu.json</code>.
+              Hệ thống cung cấp sẵn mẫu bản ghi rỗng gồm đúng 11 trường thông tin chuẩn mực cùng trường nguồn tư liệu để bạn có thể tự sao chép hoặc bổ sung dữ liệu địa phương vào tệp <code>nongvu.json</code>.
             </p>
           </div>
 
@@ -227,7 +283,7 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
         {/* Code Preview of Empty Structure */}
         <div className="bg-stone-900 text-stone-200 rounded-2xl p-5 font-mono text-xs overflow-x-auto shadow-inner relative">
           <div className="flex items-center justify-between text-stone-400 pb-3 mb-3 border-b border-stone-800">
-            <span>cau_truc_mau_rong (11 trường chuẩn hoá)</span>
+            <span>cau_truc_mau_rong (Trường dữ liệu chuẩn hóa)</span>
             <span className="text-[10px] text-amber-400">UTF-8 JSON</span>
           </div>
           <pre>{emptyTemplateString}</pre>
@@ -343,6 +399,21 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
 
               <div>
                 <label className="block font-bold text-stone-700 mb-1">
+                  Phân loại thông tin (Requirement 8)
+                </label>
+                <select
+                  value={formData.loai_thong_tin || ''}
+                  onChange={(e) => setFormData({ ...formData, loai_thong_tin: e.target.value as any })}
+                  className="w-full p-2.5 rounded-xl border border-stone-200 text-xs bg-stone-50 focus:ring-2 focus:ring-emerald-700 outline-none font-medium"
+                >
+                  <option value="truyen_thong">Tri thức canh tác truyền thống</option>
+                  <option value="hien_dai">Thông tin kỹ thuật hiện đại</option>
+                  <option value="">Chưa phân loại (Để trống nếu chưa xác định)</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block font-bold text-stone-700 mb-1">
                   5. Thời gian gieo trồng
                 </label>
                 <input
@@ -382,13 +453,39 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
 
               <div>
                 <label className="block font-bold text-stone-700 mb-1">
-                  8. Nguồn tư liệu
+                  8. Nguồn tư liệu (Tên tài liệu / bài viết)
                 </label>
                 <input
                   type="text"
-                  placeholder="Ví dụ: Kinh nghiệm gia đình nông hộ; Khuyến nông"
+                  placeholder="Ví dụ: Cẩm nang nông nghiệp Nam Định..."
                   value={formData.nguon_tu_lieu}
                   onChange={(e) => setFormData({ ...formData, nguon_tu_lieu: e.target.value })}
+                  className="w-full p-2.5 rounded-xl border border-stone-200 text-xs focus:ring-2 focus:ring-emerald-700 outline-none"
+                />
+              </div>
+
+              <div>
+                <label className="block font-bold text-stone-700 mb-1">
+                  Tác giả / Đơn vị cung cấp
+                </label>
+                <input
+                  type="text"
+                  placeholder="Ví dụ: Hội Nông dân tỉnh..."
+                  value={formData.tac_gia_don_vi || ''}
+                  onChange={(e) => setFormData({ ...formData, tac_gia_don_vi: e.target.value })}
+                  className="w-full p-2.5 rounded-xl border border-stone-200 text-xs focus:ring-2 focus:ring-emerald-700 outline-none"
+                />
+              </div>
+
+              <div>
+                <label className="block font-bold text-stone-700 mb-1">
+                  Đường dẫn tham khảo (nếu có)
+                </label>
+                <input
+                  type="url"
+                  placeholder="https://..."
+                  value={formData.duong_dan_tham_khao || ''}
+                  onChange={(e) => setFormData({ ...formData, duong_dan_tham_khao: e.target.value })}
                   className="w-full p-2.5 rounded-xl border border-stone-200 text-xs focus:ring-2 focus:ring-emerald-700 outline-none"
                 />
               </div>
@@ -410,7 +507,7 @@ export const SourcesScreen: React.FC<SourcesScreenProps> = ({ data, onRecordAdde
 
               <div>
                 <label className="block font-bold text-stone-700 mb-1">
-                  10. Phương pháp canh tác truyền thống
+                  10. Phương pháp canh tác
                 </label>
                 <textarea
                   rows={2}

@@ -224,7 +224,7 @@ export default function App() {
               <span>Dự án Xã hội Phi lợi nhuận & Sản phẩm Thực tập:</span>
             </div>
             <p className="font-serif italic text-white text-sm sm:text-base leading-relaxed">
-              "Sản phẩm thực tập của Nguyễn Văn An, mã sinh viên PH70154, mã dự án E02, Chương trình Thực tập sinh Đợt 15 FPT Polytechnic và IMTA TECH, dự án xã hội phi lợi nhuận."
+              "Sản phẩm thực tập của Nguyễn Văn An, mã sinh viên PH70154, Nhóm 1 — Đợt 15, mã dự án E02, Chương trình Thực tập sinh Đợt 15 FPT Polytechnic và IMTA TECH, dự án xã hội phi lợi nhuận."
             </p>
             <p className="text-stone-400 text-xs pt-1">
               Khuyến cáo: Thời vụ gieo trồng có sự biến thiên theo tiểu khí hậu từng địa phương. Dữ liệu đối chiếu từ các nguồn tư liệu nông nghiệp chính thống của Việt Nam.

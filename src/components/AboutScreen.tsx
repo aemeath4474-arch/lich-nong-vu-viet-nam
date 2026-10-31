@@ -129,9 +129,15 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({
       {/* Hero Banner */}
       <div className="bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-950 text-white rounded-3xl p-6 sm:p-10 shadow-lg relative overflow-hidden">
         <div className="relative z-10 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400 text-emerald-950 text-xs font-bold shadow-xs">
-            <Heart className="w-3.5 h-3.5 fill-current" />
-            <span>Dự Án Xã Hội Phi Lợi Nhuận</span>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400 text-emerald-950 text-xs font-bold shadow-xs">
+              <Heart className="w-3.5 h-3.5 fill-current" />
+              <span>Dự Án Xã Hội Phi Lợi Nhuận</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-800/90 text-amber-200 text-xs font-bold border border-emerald-600/60 shadow-xs">
+              <Users className="w-3.5 h-3.5" />
+              <span>Nhóm 1 — Đợt 15</span>
+            </div>
           </div>
 
           <h1 className="text-3xl sm:text-4xl font-serif font-bold text-white">
@@ -146,17 +152,24 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({
 
       {/* Mandatory Internship Certification Statement */}
       <section className="bg-amber-50 border-2 border-amber-300 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-2xl bg-amber-500 text-stone-950 flex items-center justify-center shrink-0 shadow-xs">
-            <Award className="w-7 h-7" />
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-amber-500 text-stone-950 flex items-center justify-center shrink-0 shadow-xs">
+              <Award className="w-7 h-7" />
+            </div>
+            <div>
+              <span className="text-xs font-bold text-amber-800 block">
+                Thông tin công bố dự án thực tập
+              </span>
+              <h2 className="text-xl sm:text-2xl font-serif font-bold text-amber-950">
+                Chứng Nhận Thực Tập & Thông Tin Tác Giả
+              </h2>
+            </div>
           </div>
-          <div>
-            <span className="text-xs font-bold text-amber-800 block">
-              Thông tin công bố dự án thực tập
-            </span>
-            <h2 className="text-xl sm:text-2xl font-serif font-bold text-amber-950">
-              Chứng Nhận Thực Tập & Thông Tin Tác Giả
-            </h2>
+
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-200/90 border border-amber-400/80 text-amber-950 text-xs font-bold self-start sm:self-auto">
+            <Users className="w-4 h-4 text-emerald-800" />
+            <span>Nhóm 1 — Đợt 15</span>
           </div>
         </div>
 
@@ -166,12 +179,12 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({
             Tuyên bố trách nhiệm sản phẩm:
           </div>
           <p className="text-base sm:text-lg font-serif font-bold text-emerald-950 leading-relaxed">
-            "Sản phẩm thực tập của Nguyễn Văn An, mã sinh viên PH70154, mã dự án E02, Chương trình Thực tập sinh Đợt 15 FPT Polytechnic và IMTA TECH, dự án xã hội phi lợi nhuận."
+            "Sản phẩm thực tập của Nguyễn Văn An, mã sinh viên PH70154, Nhóm 1 — Đợt 15, mã dự án E02, Chương trình Thực tập sinh Đợt 15 FPT Polytechnic và IMTA TECH, dự án xã hội phi lợi nhuận."
           </p>
         </div>
 
         {/* Breakdown Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 text-xs">
           <div className="bg-amber-100/70 rounded-xl p-4 border border-amber-200/80">
             <div className="flex items-center gap-2 text-stone-600 mb-1">
               <GraduationCap className="w-4 h-4 text-emerald-800" />
@@ -179,6 +192,15 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({
             </div>
             <div className="font-bold text-stone-900 text-sm">Nguyễn Văn An</div>
             <div className="text-stone-500 text-[11px] mt-0.5">MSV: PH70154</div>
+          </div>
+
+          <div className="bg-amber-100/70 rounded-xl p-4 border border-amber-200/80">
+            <div className="flex items-center gap-2 text-stone-600 mb-1">
+              <Users className="w-4 h-4 text-emerald-800" />
+              <span>Nhóm & Đợt thực tập</span>
+            </div>
+            <div className="font-bold text-emerald-900 text-sm">Nhóm 1 — Đợt 15</div>
+            <div className="text-stone-500 text-[11px] mt-0.5">Chương trình thực tập sinh</div>
           </div>
 
           <div className="bg-amber-100/70 rounded-xl p-4 border border-amber-200/80">
@@ -196,7 +218,7 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({
               <span>Đơn vị đào tạo & liên kết</span>
             </div>
             <div className="font-bold text-stone-900 text-sm">FPT Polytechnic & IMTA TECH</div>
-            <div className="text-stone-500 text-[11px] mt-0.5">Thực tập sinh Đợt 15</div>
+            <div className="text-stone-500 text-[11px] mt-0.5">Đợt 15 thực tập</div>
           </div>
 
           <div className="bg-amber-100/70 rounded-xl p-4 border border-amber-200/80">
